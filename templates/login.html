@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="static/login.css">
+    </head>
+    <body>
+        <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="http://192.168.21.136:5091/join" method="post">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" name="id" placeholder="ID" />
+                    <input type="password" name="pw" placeholder="PW" />
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="submit" value="회원가입">
+
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="http://192.168.21.136:5091/login" method="post">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="text" name="id" placeholder="ID">
+                    <input type="password" name="pw" placeholder="PW">
+                    <input type="submit" value="로그인">
+                    <a href="http://192.168.21.136:5091/select">전체회원조회</a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

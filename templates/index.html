@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>월요일 좋아</h2>
+
+    <!--
+        data를 전송하기 위한 3가지 조건
+        1. data의 도착지 : form 태그의 action 속성
+        2. data의 Key값 : name
+        3. data의 전송시점 : submit
+    -->
+
+    <form action="http://192.168.21.136:5067/cal", method="get"> <!-- action 속성은 도착주소  method default 값이 get이다-->
+        <input type="text" name="num1">
+        <input type="text" name="num2">
+        <input type="submit" value="보내기">
+    </form>
+
+    <h2>로그인</h2>
+    <form action="http://192.168.21.136:5067/login" method="post">
+        
+        <input type="text" name="id" placeholder="ID">
+        <input type="password" name="pw" placeholder="Password">
+        <input type="submit" value="로그인">
+
+    </form>
+
+</body>
+</html>

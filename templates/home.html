@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/style.css">
+    <!-- html 파일이 아니라 플라스크 서버 파일이 기준이다. 파일 경로를 유심히 살피자 -->
+
+
+</head>
+<body>
+    <img src="static/galaxy.jpg">
+
+    <!-- 
+        form 태그로 data 전송
+
+        주소 : http://내IPv4:내port번호/login
+        전송방식 : POST
+        data 1 : name속성이 "id"
+        data 2 : name속성이 "pw"
+        두 입력값 모두 input태그 사용
+        전송버튼은 "로그인" 이라는 value
+
+
+    -->
+
+    <form action="http://192.168.21.136:5083/login" method="post">
+        <input class="login" type="text" name="id" placeholder="ID">
+        <input class="login" type="password" name="pw" placeholder="password">
+        <input type="submit" value="로그인">
+    </form>
+
+    <!-- 
+        form 태그로 data 전송
+
+        주소 : http://내IPv4:내port번호/join
+        전송방식 : POST
+        data 1 : name속성이 "id" class를 "join"
+        data 2 : name속성이 "pw" class를 "join"
+        두 입력값 모두 input태그 사용
+        전송버튼은 "회원가입" 이라는 value
+
+
+    -->
+    <form action="http://192.168.21.136:5083/join" method="post">
+        <input class="join" type="text" name="id" placeholder="회원가입 ID">
+        <input class="join" type="password" name="pw" placeholder="회원가입 password">
+        <input type="submit" value="회원가입">
+    </form>
+
+
+
+
+</body>
+</html>
